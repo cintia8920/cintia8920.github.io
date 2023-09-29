@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link href="https://fonts.googleapis.com/css2?family=Assistant:wght@300&family=Roboto:wght@300&family=Source+Sans+Pro:ital,wght@0,200;0,300;0,400;0,600;0,700;1,400&display=swap" rel="stylesheet" />
+  <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet" />
+  <link rel="stylesheet" href="style4.css" />
+  <title>Proyecto cv</title>
+</head>
+
+<body>
+  <div class="container">
+    <aside>
+      <div class="izquierda">
+        <img src="1539721696640.jpg" alt="Mi foto" />
+      </div>
+
+      <div class="margin-title">
+        <h2>CONTACTO</h2>
+        <div class="flex-container">
+          <span class="material-icons margin-icons"> room </span>
+          <p> Argentina, Entre Rios</p>
+        </div>
+        <div class="flex-container">
+          <span class="material-icons margin-icons"> phone </span>
+          <p> 0256-587915267</p>
+        </div>
+        <div class="flex-container">
+          <span class="material-icons margin-icons"> email </span>
+          <p>yo@gmail.com</p>
+        </div>
+      </div>
+      <div class="margin-title">
+        <h2>IDIOMAS</h2>
+        <div class="columns">
+          <div class="flex-container">
+            <div class="icons flex-container margin-icons">
+              <span class="material-icons star"> grade </span><span class="material-icons star"> grade </span><span class="material-icons star"> grade </span>
+            </div>
+
+            <p>ESPAÑOL</p>
+          </div>
+          <div class="flex-container">
+            <div class="flex-container margin-icons">
+              <span class="material-icons star"> grade </span><span class="material-icons star"> grade </span><span class="material-icons star"> grade </span>
+            </div>
+            <p>INGLES</p>
+          </div>
+          <div class="flex-container">
+            <div class="flex-container margin-icons">
+              <span class="material-icons star"> grade </span><span class="material-icons star"> grade </span>
+            </div>
+            <p>FRANCES</p>
+          </div>
+          <div class="flex-container">
+            <div class="flex-container margin-icons">
+            </div>
+          </div>
+          
+        </div>
+
+    </aside>
+    <main>
+      <div>
+        <h1 class="nombre">CINTIA FERNANDEZ</h1>
+        <hr />
+        <section class="primer-margen">
+          Programadora de sistemas con 3 años de experiencia, mejorando el funcionamiento de organizaciones
+          con soluciones de sistemas de información. Reconocida por recomendar nuevas tecnologías para mejorar
+          los sistemas existentes e introducir nuevos programas.
+        </section>
+
+        <section class="margin-title">
+          <h2>EXPERIENCIA LABORAL</h2>
+          <div>
+            <p class="date"> Segula tecnologies - Programador de Sistemas <br> 02/2018 - 11/2020</p>
+            <ul>
+              <li>
+                Experiencia revisando códigos, hojas de ruta
+                de proyectos y requisitos cambiantes.
+              </li>
+              <li>
+                Inspección en la instalación de programas
+                de software y sistemas de hardware para cumplir los requisitos de cada equipo
+              </li>
+            </ul>
+          </div>
+
+          <div>
+            <br>
+            <p class="date"> Netboss comunicaciones - Programador de Sistemas <br> 02/2012 - 12/2018</p>
+            <ul>
+              <li>
+                Logro de un 87% de éxito en la automatización del software,
+                analizando operaciones de reclamos, datos e incidencias.
+              </li>
+              <li>
+                Creacion de diseños conceptuales a partir de objetos de negocio
+                para desarrollar aplicaciones de acuerdo con la estrategia de la empresa.
+              </li>
+            </ul>
+          </div>
+        </section>
+
+        <section class="margin-title">
+          <h2>HABILIDADES</h2>
+          <div>
+            <ul>
+              <li>
+                Análisis técnico
+              </li>
+              <li>
+                Generación de Informes
+              </li>
+            </ul>
+          </div>
+
+          <div>
+            <ul>
+              <li>
+                Reccopilación y análisis de datos
+              </li>
+              <li>
+                Herramientas de automatizacion
+              </li>
+            </ul>
+          </div>
+
+        </section>
+      
+
+      </div>
+      <div class="download">
+        <span class="material-icons" id="print">
+          PRINT CV
+        </span>
+
+      </div>
+    </main>
+  </div>
+
+  <!--Coloque el Js aqui ya que es un solo documento html, como decia en el cursado-->
+
+  <script>
+    let print = document.querySelector('#print');
+    print.onclick = () => {
+      window.print();
+    }
+  </script>
+</body>
+
+</html>

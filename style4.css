@@ -1,0 +1,263 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Source Sans Pro", sans-serif;
+    font-size: 25px;
+  }
+  
+  .container {
+    display: flex;
+    padding: 0 30%;
+    margin-top: 50px;
+    height: 80%;
+  }
+  
+  aside {
+    max-width: 100%;
+    background: #ce12bd;
+    background: -moz-linear-gradient(
+      -45deg,
+      #ce12bd 0%,
+      #5684a4 49%,
+      #c5a3a8 100%
+    );
+    color: rgb(235, 239, 244);
+    padding: 5%;
+  }
+  
+  .margin {
+    margin-right: 10px;
+  }
+  
+  .flex-container {
+    display: flex;
+    margin-bottom: 30px;
+  }
+  
+  .izquierda img {
+    max-width: 100%;
+    border-radius: 90%;
+    object-fit: cover;
+    object-position: top;
+    box-shadow: 0px 0px 10px rgb(195, 166, 178);
+    cursor: pointer;
+    transition: 2s;
+    user-select: none;
+    filter: grayscale(100%);
+  }
+  
+  .izquierda img:hover {
+    filter: grayscale(0%);
+    transform: scale(1.3);
+  }
+  
+  .margin-title {
+    margin: 20px 0;
+    font-size: 20px;
+  }
+  
+  .primer-margen {
+    margin: 30px 0;
+    font-weight: 600;
+    font-size: 25px;
+    font-style: italic;
+  }
+  
+  .date {
+    color: rgb(16, 6, 6);
+    font-size: 20px;
+    margin-bottom: 2%;
+    font-weight: bold;
+    font-size: 22px;
+    font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande",
+      "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
+  }
+  
+  h2 {
+    margin-bottom: 15px;
+  }
+  
+  .star {
+    font-size: 28px;
+  }
+  
+  .margin-icons {
+    margin-right: 18px;
+    font-size: 40px;
+  }
+  
+  main {
+    padding: 5%;
+    background-color: rgb(243, 238, 243);
+    max-height: 100%;
+  }
+  
+  .nombre {
+    color: rgba(140, 49, 168, 0.71);
+    font-size: 60px;
+  }
+  
+  hr {
+    border-width: 10%;
+    height: 4px;
+    background-color: rgb(225, 86, 190);
+    margin: 2% 0;
+  }
+  
+  h2,
+  section h2 {
+    color: rgba(72, 50, 76, 0.884);
+  }
+  
+  h4 {
+    font-weight: bold;
+    margin-bottom: 1%;
+    margin-top: 3%;
+    font-size: 15px;
+  }
+  
+  section span {
+    margin: 0 1%;
+    display: inline-block;
+  }
+  
+  ul {
+    margin-left: 3%;
+  }
+  
+  ul li {
+    font-family: "Assistant", sans-serif;
+    font-size: 22px;
+    font-weight: 500;
+  }
+  
+  .align {
+    align-items: center;
+  }
+  
+  .download span {
+    font-size: 25px;
+    color: aliceblue;
+    padding: 10px 20px;
+    margin: 50px 0 0px 250px;
+    background: #ce12bd;
+    background: -moz-linear-gradient(
+      -45deg,
+      #ce12bd 0%,
+      #5684a4 49%,
+      #c5a3a8 100%
+    ); 
+    background: -webkit-linear-gradient(
+      -45deg,
+      #ce12bd 0%,
+      #5684a4 49%,
+      #c5a3a8 100%
+    );
+    background: linear-gradient(135deg, #ce12bd 0%, #5684a4 49%, #c5a3a8 100%);
+    border-radius: 50px;
+    box-shadow: 0 0 10px coral;
+    cursor: pointer;
+    transition: 2s;
+  }
+  
+  @media print {
+    .container {
+      margin: 0;
+      padding: 0;
+    }
+  
+    .nombre {
+      font-weight: 100;
+      font-family: "Courier New", Courier, monospace;
+      font-size: 50px;
+    }
+  
+    .izquierda img {
+      width: 60%;
+      margin-left: 50px;
+    }
+  
+    aside {
+      padding: 3%;
+      print-color-adjust: exact;
+      -webkit-print-color-adjust: exact;
+    }
+  
+    .margin-title {
+      margin: 10px 0;
+    }
+  
+    .primer-margen {
+      font-size: 18px;
+    }
+  
+    .date {
+      font-size: 18px;
+    }
+  
+    .download {
+      display: none;
+    }
+  
+    .download {
+      position: fixed;
+      width: 50px;
+      top: 20px;
+      left: 100%;
+      color: gray;
+    }
+  
+    .download span:hover {
+      font-size: 60px;
+    }
+  }
+  
+  @page {
+    margin: 40px;
+  }
+  
+  @media (max-width: 1300px) {
+    .container {
+      padding: 0;
+      margin-top: 0;
+    }
+  
+    .aside {
+      width: 100%;
+    }
+  
+    .download {
+      position: relative;
+      left: 80%;
+    }
+  }
+  
+  @media (max-width: 500px) {
+    .container {
+      flex-direction: column;
+      font-size: 30px;
+    }
+  
+    aside {
+      width: 100%;
+      padding: 10%;
+    }
+  
+    aside h2 {
+      text-align: center;
+    }
+  
+    .primer-margen p,
+    ul li {
+      text-align: justify;
+    }
+  
+    .nombre h2 {
+      color: rgb(199, 102, 197);
+      text-shadow: 0 0 3px white;
+    }
+  }
+  
+        
+    
